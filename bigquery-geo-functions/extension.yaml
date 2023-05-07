@@ -25,7 +25,9 @@ author:
 
 displayName: BigQuery Geo Functions
 
-description: TODO
+description: Provides location based utilities, adding positional infornmation to addresses and calculating distances betweem two locations in BigQuery.
+
+icon: icon.png
 
 license: Apache-2.0 # https://spdx.org/licenses/
 
