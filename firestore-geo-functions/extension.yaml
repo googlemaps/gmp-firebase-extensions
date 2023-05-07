@@ -16,8 +16,8 @@
 # https://firebase.google.com/docs/extensions/alpha/ref-extension-yaml
 
 name: firestore-geo-functions
-version: 0.0.2 
-specVersion: v1beta 
+version: 0.0.2
+specVersion: v1beta
 
 author:
   authorName: Firebase
@@ -27,7 +27,9 @@ displayName: Firestore Geo Functions
 
 description: Provides location based utilities, adding positional infornmation to addresses and calculating distances betweem two locations.
 
-license: Apache-2.0 
+icon: icon.png
+
+license: Apache-2.0
 
 sourceUrl: TODO
 
@@ -42,7 +44,6 @@ apis:
 roles:
   - role: datastore.user
     reason: Allows the extension to read and write to Cloud Firestore.
-
 
 resources:
   - name: updateLatLong
