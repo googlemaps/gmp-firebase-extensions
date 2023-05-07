@@ -30,6 +30,8 @@ displayName: Firestore Address Validation
 description: >-
   Validates addresses in Cloud Firestore using the Google Maps API.
 
+icon: icon.png
+
 license: Apache-2.0 # https://spdx.org/licenses/
 
 # Public URL for the source code of your extension

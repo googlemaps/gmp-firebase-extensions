@@ -1,29 +1,56 @@
-The Address Validation Extension enhances your Firebase project by validating and standardizing addresses in your Firestore documents in real-time.
 
-The extension leverages `Google Maps Geocoding API` to automatically validate and standardize addresses when new documents are created or updated in the specified Firestore collection.
+## How This Extension Works
 
-### Real-time address validation
-Automatically validate and standardize addresses using when new documents are added or updated.
+This extension validates and standardizes addresses in your Firestore documents in real-time using the Google Maps Platform API.
 
-### Firestore integration
-Seamlessly integrates with your [Firestore](https://firebase.google.com/products/firestore) collection to store validated addresses in your documents.
+On install, you will be asked to provide a Firestore collection. When documents are created or updated within that collection, a Cloud Function will trigger that calls Google Maps API to do the following:
 
-### Configurable collection
-Specify the collection you want the extension to monitor for updates and new documents.
+* Check whether the value at the address field is valid or not, and store the result in the “addressValidity” field
+* If the address is indeed valid, standardize the address field (field name is configurable).
 
-### Pre-requisites
-Ensure you have a Firestore collection set up in your Firebase project. This collection will be monitored by the extension to validate addresses. Provide the collection ID during the extension installation.
+For example, the following document:
 
-### Additional Setup
-Before installing this extension, make sure that you've `enabled` the `Google Maps Geocoding API` for your project and obtained an `API key`.
+```json
+{
+    …,
+    address: {
+        addressLines: ["1600 Amphitheatre Parkway"],
+        regionCode: "US",
+        locality: "Mountain View",
+    }
+}
+```
+
+Will be transformed to the following document:
+
+```json
+{
+    …,
+    address: {
+        line1: "1600 Amphitheatre Parkway",
+        city: "Mountain View",
+        region: "CA",
+        postalCode: "94043",
+        country: "US"
+    },
+    addressValidity: true
+}
+```
+
+## Additional Setup
+
+Before installing this extension, make sure that you've set up a [Cloud Firestore database](https://firebase.google.com/docs/firestore/quickstart) in your Firebase project.
+
+Additionally, make sure that you've enabled the Google Maps Geocoding API for your project and obtained an API key.
 
 Follow the instructions provided in the [Google Maps API documentation](https://developers.google.com/maps/documentation/geocoding/start) to set up your API key.
 
-Billing
-To install an extension, your project must be on the Blaze (pay as you go) plan
+## Billing
 
-- You will be charged a small amount (typically around $0.01/month) for the Firebase resources required by this extension (even if it is not used).
-- This extension uses other Firebase and Google Cloud Platform services, which have associated charges if you exceed the service’s no-cost tier:
- - Google Maps Geocoding API
-  - Cloud Firestore
-   - Cloud Functions (Node.js 10+ runtime. See FAQs)
+To install an extension, your project must be on the Blaze (pay as you go) plan. You will be charged a small amount (typically around $0.01/month) for the Firebase resources required by this extension (even if it is not used).
+
+This extension uses other Firebase and Google Cloud Platform services, which have associated charges if you exceed the service’s no-cost tier:
+
+* Google Maps Geocoding API
+* Cloud Firestore
+* Cloud Functions (Node.js 14+ runtime. See [FAQs](https://firebase.google.com/support/faq#extensions-pricing))
