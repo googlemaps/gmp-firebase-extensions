@@ -16,16 +16,16 @@
 # https://firebase.google.com/docs/extensions/alpha/ref-extension-yaml
 
 name: firestore-geocode-address
-version: 0.0.2
+version: 0.0.1
 specVersion: v1beta
 
 author:
-  authorName: Firebase
-  url: https://firebase.google.com
+  authorName: Google Maps Platform
+  url: https://mapsplatform.google.com
 
 displayName: Firestore Geo Functions
 
-description: Provides location based utilities, adding positional infornmation to addresses and calculating distances betweem two locations.
+description: Geocodes addresses in Firestore and finds the best route between two addresses using the Geocoding and Distance Matrix APIs by Google Maps Platform.
 
 icon: icon.png
 
