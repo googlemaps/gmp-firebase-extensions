@@ -54,21 +54,21 @@ roles:
 resources:
   - name: createBigQueryConnection
     type: firebaseextensions.v1beta.function
-    description: Creates a BigQuery connection
+    description: Creates a BigQuery connection and creates BigQuery Remote Functions using the connection.
     properties:
       location: ${param:LOCATION}
       runtime: nodejs14
       taskQueueTrigger: {}
   - name: getLatLong
     type: firebaseextensions.v1beta.function
-    description: TODO
+    description: Remote Function to retrieve latitude and longitude of a given address.
     properties:
       location: ${param:LOCATION}
       runtime: nodejs14
       httpsTrigger: {}
   - name: getDrivingTime
     type: firebaseextensions.v1beta.function
-    description: TODO
+    description: Remote Function to calculate the driving time between two addresses.
     properties:
       location: ${param:LOCATION}
       runtime: nodejs14
