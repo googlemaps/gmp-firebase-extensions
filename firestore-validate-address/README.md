@@ -6,10 +6,7 @@
 
 
 
-**Details**: 
-## How This Extension Works
-
-This extension validates and standardizes addresses in your Firestore documents in real-time using the Google Maps Platform API.
+**Details**: This extension validates and standardizes addresses in your Firestore documents in real-time using the Google Maps Platform API.
 
 On install, you will be asked to provide a Firestore collection. When documents are created or updated within that collection, a Cloud Function will trigger that calls Google Maps API to do the following:
 

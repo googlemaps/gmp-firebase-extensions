@@ -1,5 +1,3 @@
-## How This Extension Works
-
 Use this extension to perform geocoding operations on Firestore documents using the Geocoding API and travel time estimates using the Distance Matrix API. This extension can help you:
 
 * Automatically deduce the latitude and longitude of an address

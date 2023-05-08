@@ -6,9 +6,7 @@
 
 
 
-**Details**: ## How This Extension Works
-
-Use this extension to fetch latitude and longitude for an address or calculate driving time between two addresses within your BigQuery queries using a familiar SQL syntax. You can easily query the latitude and longitude of addresses stored inside a BigQuery table, or query the best driving time between two addresses.
+**Details**: Use this extension to fetch latitude and longitude for an address or calculate driving time between two addresses within your BigQuery queries using a familiar SQL syntax. You can easily query the latitude and longitude of addresses stored inside a BigQuery table, or query the best driving time between two addresses.
 
 When installed, this extension deploys and adds two BigQuery Remote Functions to your BigQuery instance. These are Cloud Functions that call the Geocoding API and the Distance Matrix API, and can be used directly in your BigQuery queries. Sample queries will be provided after install to help you understand the syntax.
 
