@@ -9,7 +9,7 @@ You can test out this extension right away!
 
 ### Using the extension
 
-This extension adds extra information based on the frields provided.
+This extension adds extra information based on the fields provided.
 
 
 #### Latitude/longitude generation
