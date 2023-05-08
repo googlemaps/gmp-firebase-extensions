@@ -15,7 +15,7 @@
 # Learn detailed information about the fields of an extension.yaml file in the docs:
 # https://firebase.google.com/docs/extensions/alpha/ref-extension-yaml
 
-name: firestore-geo-functions
+name: firestore-geocode-address
 version: 0.0.2
 specVersion: v1beta
 
@@ -33,7 +33,7 @@ tags: [utilities, google-maps, location, logistics]
 
 license: Apache-2.0
 
-sourceUrl: TODO
+sourceUrl: https://github.com/googlemaps/gmp-firebase-extensions/firestore-geocode-address
 
 billingRequired: true
 
