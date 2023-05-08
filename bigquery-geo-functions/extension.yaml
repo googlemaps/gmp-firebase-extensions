@@ -20,16 +20,16 @@ version: 0.0.1 # Follow semver versioning
 specVersion: v1beta # Version of the Firebase Extensions specification
 
 author:
-  authorName: Firebase
-  url: https://firebase.google.com
+  authorName: Google Maps Platform
+  url: https://mapsplatform.google.com
 
-displayName: BigQuery Geo Functions
+displayName: Geocode Address in BigQuery
 
-description: TODO
+description: Adds custom BigQuery remote functions for geocoding operations. App developers can use these functions directly within BigQuery queries.
 
 license: Apache-2.0 # https://spdx.org/licenses/
 
-sourceUrl: TODO
+sourceUrl: https://github.com/googlemaps/gmp-firebase-extensions/bigquery-geocode-address
 
 billingRequired: true
 
