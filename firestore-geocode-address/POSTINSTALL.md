@@ -21,8 +21,8 @@ The extension will automatically add the `longitude and longitude` of the addres
 ```js
 {
   address:  '1600 Amphitheatre Parkway, Mountain View, CA',
-  latitude: 37.4223878
-  longitude: -122.0841877
+  latitude: 37.4223878,
+  longitude: -122.0841877,
   ext_getLatLongStatus: {
     status: "ok"
   }
@@ -38,8 +38,8 @@ The extension will automatically add the `longitude and longitude` of the addres
 ```js
 {
   origin:  '1600 Amphitheatre Parkway, Mountain View, CA',
-  destination: '85 10th Ave, New York, NY' 
-  bestDrivingTime: 157196
+  destination: '85 10th Ave, New York, NY', 
+  bestDrivingTime: 157196,
   ext_getLatLongStatus: {
     status: "ok"
   }
