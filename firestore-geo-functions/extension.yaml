@@ -29,6 +29,8 @@ description: Provides location based utilities, adding positional infornmation t
 
 icon: icon.png
 
+tags: [utilities, google-maps, location, logistics]
+
 license: Apache-2.0
 
 sourceUrl: TODO
