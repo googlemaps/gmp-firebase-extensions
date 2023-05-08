@@ -12,9 +12,9 @@ You can test out this extension right away!
 This extension adds extra information based on the frields provided.
 
 
-#### Lat/long generation
+#### Latitude/longitude generation
 
-Add a new document with an `address` field and add the full addresss of the location.
+Add a new document with an `address` field and add the full address of the location.
 
 The extension will automatically add the `longitude and longitude` of the address.
 
@@ -31,7 +31,7 @@ The extension will automatically add the `longitude and longitude` of the addres
 
 #### Calculate Driving Distance
 
-Add a new document with `origin` and `destination`adding the full addresss of a location for each.
+Add a new document with `origin` and `destination` adding the full addresss of a location for each.
 
 The extension will automatically add the `longitude and longitude` of the address.
 
