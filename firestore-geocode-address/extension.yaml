@@ -23,7 +23,7 @@ author:
   authorName: Google Maps Platform
   url: https://mapsplatform.google.com
 
-displayName: Firestore Geo Functions
+displayName: Geocode Address in Firestore
 
 description: Geocodes addresses in Firestore and finds the best route between two addresses using the Geocoding and Distance Matrix APIs by Google Maps Platform.
 
