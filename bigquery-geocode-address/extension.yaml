@@ -25,7 +25,7 @@ author:
 
 displayName: Geocode Address in BigQuery
 
-description: Adds custom BigQuery remote functions for geocoding operations. App developers can use these functions directly within BigQuery queries.
+description: Enables running geocoding functions directly in BigQuery queries using Geocoding API by Google Maps Platform.
 
 license: Apache-2.0 # https://spdx.org/licenses/
 
