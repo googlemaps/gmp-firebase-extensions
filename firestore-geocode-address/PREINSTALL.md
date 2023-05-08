@@ -5,7 +5,7 @@ Use this extension to perform geocoding operations on Firestore documents using 
 * Automatically deduce the latitude and longitude of an address
 * Figure out the best driving time between two addresses
 
-The extension listens to specified fields in documents within a Firestore collection and updates the latitude, longitude, and best driving time fields as needed.
+The extension listens to specified fields in documents within a Firestore collection and updates the `latitude`, `longitude`, and `best driving time` fields as needed.
 
 On install, you will be asked to provide a Firestore collection. When documents are created or updated within that collection, a Cloud Function will trigger that calls Geocoding API to execute a geocoding operation.
 
