@@ -10,7 +10,7 @@ On install, you will be asked to provide a Firestore collection. When documents 
 
 For example, the following document:
 
-```json
+```
 {
     …,
     address: {
@@ -23,7 +23,7 @@ For example, the following document:
 
 Will be transformed to the following document:
 
-```json
+```
 {
     …,
     address: {
@@ -41,9 +41,7 @@ Will be transformed to the following document:
 
 Before installing this extension, make sure that you've set up a [Cloud Firestore database](https://firebase.google.com/docs/firestore/quickstart) in your Firebase project.
 
-Additionally, make sure that you've enabled the Google Maps Geocoding API for your project and obtained an API key.
-
-Follow the instructions provided in the [Google Maps API documentation](https://developers.google.com/maps/documentation/geocoding/start) to set up your API key.
+Additionally, make sure that you've enabled the [Address Validation API](https://developers.google.com/maps/documentation/address-validation/cloud-setup) for your project and obtained an API key. You will be asked to provide this API key during installation.
 
 ## Billing
 
@@ -51,6 +49,6 @@ To install an extension, your project must be on the Blaze (pay as you go) plan.
 
 This extension uses other Firebase and Google Cloud Platform services, which have associated charges if you exceed the service’s no-cost tier:
 
-* Google Maps Geocoding API
+* [Address Validation API](https://developers.google.com/maps/documentation/address-validation/usage-and-billing)
 * Cloud Firestore
 * Cloud Functions (Node.js 14+ runtime. See [FAQs](https://firebase.google.com/support/faq#extensions-pricing))
