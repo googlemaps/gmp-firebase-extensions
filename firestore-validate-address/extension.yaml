@@ -37,7 +37,7 @@ tags: [utilities, shipping, google-maps, location, logistics]
 license: Apache-2.0 # https://spdx.org/licenses/
 
 # Public URL for the source code of your extension
-sourceUrl: https://github.com/googlemaps/gmp-firebase-extensions/firestore-validate-address
+sourceUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/firestore-validate-address
 
 # Specify whether a paid-tier billing plan is required to use your extension.
 # Learn more in the docs: https://firebase.google.com/docs/extensions/alpha/ref-extension-yaml#billing-required-field
