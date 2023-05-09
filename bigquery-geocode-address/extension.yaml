@@ -23,6 +23,11 @@ author:
   authorName: Google Maps Platform
   url: https://mapsplatform.google.com
 
+contributors:
+- authorName: Invertase
+  email: oss@invertase.io
+  url: https://github.com/invertase
+
 displayName: Geocode Address in BigQuery
 
 description: Enables running geocoding functions directly in BigQuery queries using Geocoding API by Google Maps Platform.
@@ -30,6 +35,7 @@ description: Enables running geocoding functions directly in BigQuery queries us
 license: Apache-2.0 # https://spdx.org/licenses/
 
 sourceUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/bigquery-geocode-address
+releaseNotesUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/bigquery-geocode-address/CHANGELOG.md
 
 billingRequired: true
 
