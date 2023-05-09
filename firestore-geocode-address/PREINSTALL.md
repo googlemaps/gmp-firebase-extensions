@@ -11,7 +11,7 @@ The extension listens to specified fields in documents within a Firestore collec
 
 On install, you will be asked to provide a Firestore collection. When documents are created or updated within that collection, a Cloud Function will trigger that calls the Geocoding API to execute a geocoding operation.
 
-### Automatically retrieves latitude and longitude for an address
+### Retrive latitude and longitude for an address
 
 This feature will geocode an address when a valid address has been added/updated in a document from the specified collection.
 
