@@ -1,5 +1,5 @@
 {
-  "name": "firestore-address-validation",
+  "name": "firestore-validate-address",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
     "build": "tsc",
@@ -9,7 +9,8 @@
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
-    "generate-readme": "firebase ext:info .. --markdown > ../README.md"
+    "generate-readme": "firebase ext:info .. --markdown > ../README.md",
+    "gcp-build": ""
   },
   "main": "lib/index.js",
   "dependencies": {
