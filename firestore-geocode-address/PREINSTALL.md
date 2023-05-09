@@ -10,9 +10,7 @@ This extenion uses the [Geocoding API](https://developers.google.com/maps/docume
 
 ### Retrive latitude and longitude for an address
 
-This feature will geocode (retrive latitude and longitude) an address when a valid address has been added/updated in a document from the specified collection. 
-
-When a document in the target collection is created or updated with a 
+The extension will geocode (retrive latitude and longitude) an address when a valid address has been added/updated in a document from the target collection. 
 
 For example, if we configure the extension to listen to the `address_book` collection, we can use the code snippet below to create a new document with an `address` field set to `1600 Amphitheatre Parkway, Mountain View, CA`. This will trigger the extension to add `latitude` and `longitude` fields to the document that map to the address.
 
@@ -24,9 +22,9 @@ admin.firestore().collection('address_book').add({
 
 ### Estimate the best driving time between two addresses
 
-If an origin and destination are provided to the collection, the extension calls the Distance Matrix API to calculate the best driving time between two addresses.
+The extension estimate best dirivng time between two addresses when an origin and destination are added/updated in a document from the target collection.
 
-This extension will estimate bestDrivingTime information based on the provided origin and destination addresses.
+For example, if we configure the extension to listen to the `address_book` collection - the document created from the code snippet below will trigger the extension to add an estimate for `bestDrivingTime` between the `origin` and `destination` address to the document.
 
 ```javascript
 admin.firestore().collection('address_book').add({
@@ -43,11 +41,10 @@ Whenever there are intermittent issues with the Google Maps Platform APIs, this 
 
 ## Before installing
 
-To use this extension, your Firebase project must:
-* Have a Cloud Firestore database with a collection for documents with the configured address fields.
-* Be on the [Blaze pay-as-you-go pricing plan](https://firebase.google.com/docs/projects/billing/firebase-pricing-plans#blaze-pricing-plan). The Blaze plan is required to install any extension.
-
-Additionally, take the following actions in your Firebase project before installing the extension:
+Before installing this extension, you need to do the following in your project:
+* [Upgrade to the Blaze pricing plan](https://firebase.google.com/docs/projects/billing/firebase-pricing-plans#blaze-pricing-plan). Blaze plan is required to install any extension.
+* [Set up Cloud Firestore database](https://firebase.google.com/docs/firestore/quickstart) or use an existing one.
+* [Create a Firestore collection](https://firebase.google.com/docs/firestore/quickstart#add_data) for documents with address data or use an existing one. The extension will ask for a collection path during install.
 * [Enable the Geocoding API](https://console.cloud.google.com/apis/library/geocoding-backend.googleapis.com?utm_source=Docs_EnableSpecificAPI&_gl=1*17pcy1v*_ga*NzE3NDA4NzkuMTY4MzU4MTE3NA..*_ga_NRWSTWS78N*MTY4MzU5Njk5NS40LjEuMTY4MzU5NzE4Ny4wLjAuMA..).
 * [Enable the Distance Matrix API](https://console.cloud.google.com/apis/library/distance-matrix-backend.googleapis.com?utm_source=Docs_EnableSpecificAPI&_gl=1*17pcy1v*_ga*NzE3NDA4NzkuMTY4MzU4MTE3NA..*_ga_NRWSTWS78N*MTY4MzU5Njk5NS40LjEuMTY4MzU5NzE4Ny4wLjAuMA..).
 * [Obtain a Google Maps API key](https://developers.google.com/maps/documentation/geocoding/get-api-key). You must provide this API key during installation.
@@ -60,7 +57,7 @@ You will be charged a small amount (typically around $0.01/month) for the Fireba
 
 This extension uses the following Firebase and Google Cloud services which may have associated charges if you exceed the service’s no-cost tier:
 
-* Geocoding API - see [billing details](https://developers.google.com/maps/documentation/geocoding/usage-and-billing)
-* Distance Matrix API - see [billing details](https://developers.google.com/maps/documentation/distance-matrix/usage-and-billing)
-* Cloud Firestore - see [billing details](https://firebase.google.com/docs/firestore/pricing)
-* Cloud Functions - see [billing details](https://cloud.google.com/functions/pricing)
+* [Geocoding API pricing](https://developers.google.com/maps/documentation/geocoding/usage-and-billing)
+* [Distance Matrix API pricing](https://developers.google.com/maps/documentation/distance-matrix/usage-and-billing)
+* [Cloud Functions (1st gen) pricing](https://firebase.google.com/functions/pricing)
+* [Cloud Firestore pricing](https://firebase.google.com/docs/firestore/pricing)
