@@ -1,7 +1,3 @@
-## Version 0.0.2
+## Version 0.1.0
 
-fix: updated to nodejs14
-
-## Version 0.0.1
-
-Alpha release allowing deidentify/reidentify with documentation.
+Initial release of the firestore-geocode-address extension.
