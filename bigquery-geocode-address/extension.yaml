@@ -29,6 +29,8 @@ description: Enables running geocoding functions directly in BigQuery queries us
 
 license: Apache-2.0 # https://spdx.org/licenses/
 
+icon: icon.png
+
 contributors:
 - authorName: Invertase
   email: oss@invertase.io
