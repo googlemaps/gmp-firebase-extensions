@@ -1,7 +1,7 @@
-## Version 0.0.2
+## Version 0.1.1
 
-fix: updated to nodejs14
+Rebuild package-lock.json
 
-## Version 0.0.1
+## Version 0.1.0
 
-Alpha release allowing deidentify/reidentify with documentation.
+Initial release of the firestore-geocode-address extension.

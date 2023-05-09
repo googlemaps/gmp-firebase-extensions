@@ -1,4 +1,3 @@
-
 ## How This Extension Works
 
 This extension validates and standardizes addresses in your Firestore documents in real-time.

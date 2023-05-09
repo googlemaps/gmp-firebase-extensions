@@ -20,14 +20,14 @@ Monitor the collection to see the result:
 
 ```json
 {
-  address: {
-    line1: "1600 Amphitheatre Parkway",
-    city: "Mountain View",
-    region: "CA",
-    postalCode: "94043",
-    country: "US",
-  },
-  addressValidity: true,
+   "address":{
+      "line1":"1600 Amphitheatre Parkway",
+      "city":"Mountain View",
+      "region":"CA",
+      "postalCode":"94043",
+      "country":"US"
+   },
+   "addressValidity":true
 }
 ```
 
