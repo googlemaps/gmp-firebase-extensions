@@ -29,7 +29,13 @@ description: Enables running geocoding functions directly in BigQuery queries us
 
 license: Apache-2.0 # https://spdx.org/licenses/
 
+contributors:
+- authorName: Invertase
+  email: oss@invertase.io
+  url: https://github.com/invertase
+
 sourceUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/bigquery-geocode-address
+releaseNotesUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/bigquery-geocode-address/CHANGELOG.md
 
 billingRequired: true
 
