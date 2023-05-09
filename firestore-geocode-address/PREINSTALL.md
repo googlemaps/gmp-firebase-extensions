@@ -60,4 +60,4 @@ This extension uses the following Firebase and Google Cloud services which may h
 * Geocoding API - see [billing details](https://developers.google.com/maps/documentation/geocoding/usage-and-billing)
 * Distance Matrix API - see [billing details](https://developers.google.com/maps/documentation/distance-matrix/usage-and-billing)
 * Cloud Firestore - see [billing details](https://firebase.google.com/docs/firestore/pricing)
-* Cloud Functions (Node.js 14+ runtime. See [FAQs](https://firebase.google.com/support/faq#extensions-pricing))
+* Cloud Functions (Node.js 14+ runtime) - see [FAQs](https://firebase.google.com/support/faq#extensions-pricing)
