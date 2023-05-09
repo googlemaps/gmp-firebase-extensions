@@ -1,5 +1,3 @@
-## How This Extension Works
-
 Use this extension to:
 * Retrieve the latitude and longitude for address stored in a BigQuery table.
 * Estimate the best driving time between two address stored in a BigQuery table.
