@@ -1,5 +1,5 @@
 {
-  "name": "firestore-geo-functions",
+  "name": "firestore-geocode-address",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
     "build": "tsc",
