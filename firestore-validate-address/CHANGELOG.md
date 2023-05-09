@@ -1,3 +1,7 @@
+## Version 0.1.2
+
+Rebuild package-lock.json
+
 ## Version 0.1.1
 
 Updated package-lock.json
