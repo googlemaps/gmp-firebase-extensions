@@ -8,7 +8,7 @@
 
 **Details**: Use this extension to perform geocoding operations on Firestore documents using the Geocoding API and travel time estimates using the Distance Matrix API. This extension can help you:
 
-* Automatically retrieve the latitude and longitude of an address
+* Automatically deduce the latitude and longitude of an address
 * Figure out the best driving time between two addresses
 
 The extension listens to specified fields in documents within a Firestore collection and updates the `latitude`, `longitude`, and `best driving time` fields as needed.

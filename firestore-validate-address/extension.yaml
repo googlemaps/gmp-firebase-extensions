@@ -36,9 +36,14 @@ tags: [utilities, shipping, google-maps, location, logistics]
 
 license: Apache-2.0 # https://spdx.org/licenses/
 
+contributors:
+- authorName: Invertase
+  email: oss@invertase.io
+  url: https://github.com/invertase
+
 # Public URL for the source code of your extension
 sourceUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/firestore-validate-address
-
+releaseNotesUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/firestore-validate-address/CHANGELOG.md
 # Specify whether a paid-tier billing plan is required to use your extension.
 # Learn more in the docs: https://firebase.google.com/docs/extensions/alpha/ref-extension-yaml#billing-required-field
 billingRequired: true
