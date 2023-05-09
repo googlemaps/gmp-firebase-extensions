@@ -17,7 +17,8 @@
     "@googlemaps/google-maps-services-js": "^3.3.27",
     "firebase-admin": "^11.3.0",
     "firebase-functions": "^4.2.1",
-    "mockdate": "^3.0.5"
+    "mockdate": "^3.0.5",
+    "typescript": "^4.9.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
@@ -28,8 +29,7 @@
     "eslint-plugin-import": "^2.25.4",
     "firebase-functions-test": "^3.0.0",
     "jest": "^29.5.0",
-    "ts-jest": "^29.0.5",
-    "typescript": "^4.9.0"
+    "ts-jest": "^29.0.5"
   },
   "private": true
 }
