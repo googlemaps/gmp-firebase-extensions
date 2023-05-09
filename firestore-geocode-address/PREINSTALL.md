@@ -1,5 +1,3 @@
-## How This Extension Works
-
 Use this extension to:
 * Retrieve the latitude and longitude for an address in a Firestore document.
 * Estimate the best driving time between two addresses in a Firestore document.

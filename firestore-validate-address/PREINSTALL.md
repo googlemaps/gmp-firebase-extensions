@@ -1,5 +1,3 @@
-## How This Extension Works
-
 This extension validates and standardizes addresses in your Firestore documents in real-time.
 
 On install, you will be asked to provide a target Firestore collection. When documents are created or updated within that collection, a Cloud Function is trigged that calls the [Address Validation API](https://developers.google.com/maps/documentation/address-validation/overview) to do the following:
