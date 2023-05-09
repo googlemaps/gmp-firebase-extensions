@@ -1,15 +1,12 @@
 ## How This Extension Works
 
-Use this extension to perform geocoding operations on Firestore documents using the [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview) and travel time estimates using the [Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/overview) from Google Maps Platform. 
-
-This extension can help you:
-
-* Automatically retrieve the latitude and longitude for an address
-* Calculate the best driving time between two addresses
+Use this extension to:
+* Retrieve and write the latitude and longitude for an address in a Firestore document.
+* Estimate and write the best driving time between two addresses in a Firestore document.
 
 The extension listens to specified fields in documents within a Firestore collection and updates the `latitude`, `longitude`, and `best driving time` fields as needed.
 
-On install, you will be asked to provide a Firestore collection. When documents are created or updated within that collection, a Cloud Function will trigger that calls the Geocoding API to execute a geocoding operation.
+On install, you will be asked to provide a Firestore collection. When documents are created or updated within the collection, a Cloud Function is triggered that performs the operation using the [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview) and [Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/overview) from Google Maps Platform.
 
 ### Retrive latitude and longitude for an address
 
@@ -21,11 +18,11 @@ admin.firestore().collection('address_book').add({
 });
 ```
 
-### Calculate the best driving time between two addresses
+### Estimate the best driving time between two addresses
 
 If an origin and destination are provided to the collection, the extension calls the Distance Matrix API to calculate the best driving time between two addresses.
 
-This extension will calculate bestDrivingTime information based on the provided origin and destination addresses.
+This extension will estimate bestDrivingTime information based on the provided origin and destination addresses.
 
 ```javascript
 admin.firestore().collection('address_book').add({

@@ -2,9 +2,9 @@
 
 Use this extension to perform the following operations in a BigQuery table:
 * Retrieve the latitude and longitude for stored addresses.
-* Calculate the best driving time between two stored addresses.
+* Estimate the best driving time between two stored addresses.
 
-This extension adds two [BigQuery Remote Functions](https://cloud.google.com/bigquery/docs/reference/standard-sql/remote-functions) to your BigQuery instance that can be used directly in your BigQuery queries. These remote functions use the [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview) and [Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/overview) from Google Maps Platform.
+This extension deploys two [BigQuery Remote Functions](https://cloud.google.com/bigquery/docs/reference/standard-sql/remote-functions) to your BigQuery instance that can be used directly in your BigQuery queries. These remote functions use the [Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview) and [Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/overview) from Google Maps Platform.
 
 ### Retrieve latitude and longitude for an address
 
@@ -14,9 +14,9 @@ Use the following query syntax to retrieive latitude and longitude for addresses
 latLong(address: STRING): Given an address, returns the latitude and longitude as a JSON string.
 ```
 
-### Calculate the best driving time between two addresses
+### Estimate the best driving time between two addresses
 
-Use the following query syntax to Calculate the best driving time between two addresses stored in your BigQuery table with the `drivingTime` remote function:
+Use the following query syntax to estimate the best driving time between two addresses stored in your BigQuery table with the `drivingTime` remote function
 
 ```sql
 drivingTime(origin: STRING, destination: STRING): Given an origin and destination address, returns the driving time in seconds as a JSON string.
