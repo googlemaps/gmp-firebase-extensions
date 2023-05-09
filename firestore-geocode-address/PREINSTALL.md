@@ -47,7 +47,7 @@ Before installing this extension, take the following actions in your Firebase pr
 * Have or set up a [Cloud Firestore database](https://firebase.google.com/docs/firestore/quickstart).
 * Enable the [Geocoding API](https://developers.google.com/maps/documentation/geocoding/cloud-setup).
 * Enable the [Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/cloud-setup#enabling-apis).
-* Obtain an [API key](https://developers.google.com/maps/documentation/geocoding/get-api-key) for the Google Maps APIs. You must provide this API key during installation.
+* Obtain a [Google Maps API key](https://developers.google.com/maps/documentation/geocoding/get-api-key). You must provide this API key during installation.
 
 ## Billing
 
@@ -60,4 +60,4 @@ This extension uses the following Firebase and Google Cloud services which may h
 * Geocoding API - see [billing details](https://developers.google.com/maps/documentation/geocoding/usage-and-billing)
 * Distance Matrix API - see [billing details](https://developers.google.com/maps/documentation/distance-matrix/usage-and-billing)
 * Cloud Firestore - see [billing details](https://firebase.google.com/docs/firestore/pricing)
-* Cloud Functions (Node.js 14+ runtime) - see [FAQs](https://firebase.google.com/support/faq#extensions-pricing)
+* Cloud Functions - see [billing details](https://cloud.google.com/functions/pricing)

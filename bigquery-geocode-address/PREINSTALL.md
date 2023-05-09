@@ -16,26 +16,25 @@ latLong(address: STRING): Given an address, returns the latitude and longitude a
 drivingTime(origin: STRING, destination: STRING): Given an origin and destination address, returns the driving time in seconds as a JSON string.
 ```
 
-### Pre-requisites
+## Additional setup
 
-* BigQuery dataset: You'll need a BigQuery dataset to use with the extension. You can either create a new dataset or use an existing one. Remember to provide the dataset ID during the extension installation.
-* Google Maps Platform API key: Enable the Google Maps Platform API for your project and obtain an API key. Follow the instructions provided in the Google Maps documentation to set up your API key.
+Before installing this extension, take the following actions in your Firebase project:
+* Enable the [Blaze (pay as you go) plan](https://firebase.google.com/docs/projects/billing/firebase-pricing-plans#blaze-pricing-plan).
+* Set up a [BigQuery instance](https://cloud.google.com/bigquery/docs/introduction) if you do not already have one.
+* Find or create a [BigQuery dataset](https://cloud.google.com/bigquery/docs/datasets-intro) if you do not already have one. You will provide the dataset ID during the extension installation.
+* Enable the [Geocoding API](https://developers.google.com/maps/documentation/geocoding/cloud-setup).
+* Enable the [Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/cloud-setup#enabling-apis).
+* Obtain a [Google Maps API key](https://developers.google.com/maps/documentation/geocoding/get-api-key). You must provide this API key during installation.
 
-### Additional Setup
+## Billing
 
-Before installing this extension, make sure that you've set up a BigQuery instance in your Google Cloud Platform project.
-
-Additionally, make sure that you've [enabled the Geocoding API](https://developers.google.com/maps/documentation/geocoding/cloud-setup) and the [Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/cloud-setup#enabling-apis) for your project and obtained an [API key](https://developers.google.com/maps/documentation/geocoding/get-api-key). You will be asked to provide this API key during installation.
-
-
-### Billing
-
-To install an extension, your project must be on the Blaze (pay as you go) plan.
+To install an extension, your project must be on the [Blaze (pay as you go) plan](https://firebase.google.com/docs/projects/billing/firebase-pricing-plans#blaze-pricing-plan).
 
 You will be charged a small amount (typically around $0.01/month) for the Firebase resources required by this extension (even if it is not used).
 
-This extension uses other Firebase and Google Cloud Platform services, which have associated charges if you exceed the service's no-cost tier:
+This extension uses the following Firebase and Google Cloud services which may have associated charges if you exceed the service’s no-cost tier:
 
-* [Geocoding API](https://developers.google.com/maps/documentation/geocoding/usage-and-billing)
-* [Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/usage-and-billing)
-* Cloud Functions (Node.js 14+ runtime. See [FAQs](https://firebase.google.com/support/faq#extensions-pricing))
+* Geocoding API - see [billing details](https://developers.google.com/maps/documentation/geocoding/usage-and-billing)
+* Distance Matrix API - see [billing details](https://developers.google.com/maps/documentation/distance-matrix/usage-and-billing)
+* BigQuery - see [billing details](https://cloud.google.com/bigquery/pricing#bigquery-pricing)
+* Cloud Functions - see [billing details](https://cloud.google.com/functions/pricing)
