@@ -22,12 +22,12 @@ Use the following query syntax to Calculate the best driving time between two ad
 drivingTime(origin: STRING, destination: STRING): Given an origin and destination address, returns the driving time in seconds as a JSON string.
 ```
 
-## Additional setup
+## Before installing
+
+To use this extension, you will need a BigQuery instance to install the extension into and a dataset with addresses.
 
 Before installing this extension, take the following actions in your Firebase project:
-* [Upgrade to the Blaze pricing plan](https://firebase.google.com/docs/projects/billing/firebase-pricing-plans#upgrade-spark-to-blaze). 
-* Set up a [BigQuery instance](https://cloud.google.com/bigquery/docs/introduction) if you do not already have one.
-* Find or create a [BigQuery dataset](https://cloud.google.com/bigquery/docs/datasets-intro) if you do not already have one. You will provide the dataset ID during the extension installation.
+* [Upgrade to the Blaze pricing plan](https://firebase.google.com/docs/projects/billing/firebase-pricing-plans#upgrade-spark-to-blaze). Blaze plan is required to install any extension.
 * [Enable the Geocoding API](https://console.cloud.google.com/apis/library/geocoding-backend.googleapis.com?utm_source=Docs_EnableSpecificAPI&_gl=1*17pcy1v*_ga*NzE3NDA4NzkuMTY4MzU4MTE3NA..*_ga_NRWSTWS78N*MTY4MzU5Njk5NS40LjEuMTY4MzU5NzE4Ny4wLjAuMA..).
 * [Enable the Distance Matrix API](https://console.cloud.google.com/apis/library/distance-matrix-backend.googleapis.com?utm_source=Docs_EnableSpecificAPI&_gl=1*17pcy1v*_ga*NzE3NDA4NzkuMTY4MzU4MTE3NA..*_ga_NRWSTWS78N*MTY4MzU5Njk5NS40LjEuMTY4MzU5NzE4Ny4wLjAuMA..).
 * [Obtain a Google Maps API key](https://developers.google.com/maps/documentation/geocoding/get-api-key). You must provide this API key during installation.
