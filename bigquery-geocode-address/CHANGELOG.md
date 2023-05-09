@@ -1,3 +1,7 @@
+## Version 0.1.2.
+
+Updated tags.
+
 ## Version 0.1.1.
 
 Updated icon.
