@@ -15,26 +15,35 @@
 # Learn detailed information about the fields of an extension.yaml file in the docs:
 # https://firebase.google.com/docs/extensions/alpha/ref-extension-yaml
 
-name: firestore-address-validation # Identifier for your extension
-version: 0.0.1 # Follow semver versioning
+name: firestore-validate-address # Identifier for your extension
+version: 0.1.2 # Follow semver versioning
 specVersion: v1beta # Version of the Firebase Extensions specification
 
 author:
-  authorName: Firebase
-  url: https://firebase.google.com
+  authorName: Google Maps Platform
+  url: https://mapsplatform.google.com
 
 # Friendly display name for your extension (~3-5 words)
-displayName: Firestore Address Validation
+displayName: Validate Address in Firestore
 
 # Brief description of the task your extension performs (~1 sentence)
 description: >-
-  Validates addresses in Cloud Firestore using the Google Maps API.
+  Validates addresses in Firestore using the Address Validation API by Google Maps Platform.
+
+icon: icon.png
+
+tags: [utilities, shipping, google-maps, location, logistics]
 
 license: Apache-2.0 # https://spdx.org/licenses/
 
-# Public URL for the source code of your extension
-sourceUrl: TODO
+contributors:
+- authorName: Invertase
+  email: oss@invertase.io
+  url: https://github.com/invertase
 
+# Public URL for the source code of your extension
+sourceUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/firestore-validate-address
+releaseNotesUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/firestore-validate-address/CHANGELOG.md
 # Specify whether a paid-tier billing plan is required to use your extension.
 # Learn more in the docs: https://firebase.google.com/docs/extensions/alpha/ref-extension-yaml#billing-required-field
 billingRequired: true

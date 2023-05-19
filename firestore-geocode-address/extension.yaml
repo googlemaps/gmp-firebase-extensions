@@ -15,21 +15,31 @@
 # Learn detailed information about the fields of an extension.yaml file in the docs:
 # https://firebase.google.com/docs/extensions/alpha/ref-extension-yaml
 
-name: firestore-geo-functions
-version: 0.0.2 
-specVersion: v1beta 
+name: firestore-geocode-address
+version: 0.1.2
+specVersion: v1beta
 
 author:
-  authorName: Firebase
-  url: https://firebase.google.com
+  authorName: Google Maps Platform
+  url: https://mapsplatform.google.com
 
-displayName: Firestore Geo Functions
+displayName: Geocode Address in Firestore
 
-description: Provides location based utilities, adding positional infornmation to addresses and calculating distances betweem two locations.
+description: Geocodes addresses in Firestore and finds the best route between two addresses using the Geocoding and Distance Matrix APIs by Google Maps Platform.
 
-license: Apache-2.0 
+icon: icon.png
 
-sourceUrl: TODO
+tags: [utilities, google-maps, location, logistics]
+
+license: Apache-2.0
+
+contributors:
+- authorName: Invertase
+  email: oss@invertase.io
+  url: https://github.com/invertase
+
+sourceUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/firestore-geocode-address
+releaseNotesUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/firestore-geocode-address/CHANGELOG.md
 
 billingRequired: true
 
@@ -42,7 +52,6 @@ apis:
 roles:
   - role: datastore.user
     reason: Allows the extension to read and write to Cloud Firestore.
-
 
 resources:
   - name: updateLatLong
