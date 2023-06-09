@@ -34,9 +34,9 @@ icon: icon.png
 tags: [utilities, google-maps, location, logistics]
 
 contributors:
-- authorName: Invertase
-  email: oss@invertase.io
-  url: https://github.com/invertase
+  - authorName: Invertase
+    email: oss@invertase.io
+    url: https://github.com/invertase
 
 sourceUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/bigquery-geocode-address
 releaseNotesUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/bigquery-geocode-address/CHANGELOG.md
