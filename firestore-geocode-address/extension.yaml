@@ -60,7 +60,7 @@ resources:
       Update the longitue and latitude.
     properties:
       location: ${LOCATION}
-      runtime: nodejs14
+      runtime: nodejs18
       taskQueueTrigger: {}
   - name: writeLatLong
     type: firebaseextensions.v1beta.function
@@ -69,7 +69,7 @@ resources:
       the latitude and longitude of that address to the same collection.
     properties:
       location: ${LOCATION}
-      runtime: nodejs14
+      runtime: nodejs18
       eventTrigger:
         eventType: providers/cloud.firestore/eventTypes/document.write
         resource: projects/${PROJECT_ID}/databases/(default)/documents/${COLLECTION_ID}/{docId}
@@ -80,7 +80,7 @@ resources:
       the best driving time in seconds.
     properties:
       location: ${LOCATION}
-      runtime: nodejs14
+      runtime: nodejs18
       eventTrigger:
         eventType: providers/cloud.firestore/eventTypes/document.write
         resource: projects/${PROJECT_ID}/databases/(default)/documents/${COLLECTION_ID}/{docId}
