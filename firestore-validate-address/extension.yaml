@@ -82,7 +82,7 @@ resources:
       Handles tasks from unknown address validation responses.
     properties:
       location: ${LOCATION}
-      runtime: nodejs14
+      runtime: nodejs18
       taskQueueTrigger: {}
 # In the `params` field, set up your extension's user-configured parameters.
 # Learn more in the docs: https://firebase.google.com/docs/extensions/alpha/ref-extension-yaml#params-field
