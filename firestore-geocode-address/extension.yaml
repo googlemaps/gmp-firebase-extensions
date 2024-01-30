@@ -16,7 +16,7 @@
 # https://firebase.google.com/docs/extensions/alpha/ref-extension-yaml
 
 name: firestore-geocode-address
-version: 0.1.2
+version: 0.1.3
 specVersion: v1beta
 
 author:
@@ -34,9 +34,9 @@ tags: [utilities, google-maps, location, logistics]
 license: Apache-2.0
 
 contributors:
-- authorName: Invertase
-  email: oss@invertase.io
-  url: https://github.com/invertase
+  - authorName: Invertase
+    email: oss@invertase.io
+    url: https://github.com/invertase
 
 sourceUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/firestore-geocode-address
 releaseNotesUrl: https://github.com/googlemaps/gmp-firebase-extensions/tree/main/firestore-geocode-address/CHANGELOG.md
